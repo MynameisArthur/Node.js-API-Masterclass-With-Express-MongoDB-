@@ -12,7 +12,7 @@ connectDB();
 
 //Route files
 const bootcamps = require('./routes/bootcamps');
-
+const courses = require('./routes/courses');
 
 // initialize app with express
 const app = express();
@@ -27,6 +27,7 @@ if (process.env.NODE_ENV === 'development') {
 
 //Mount Routers
 app.use('/api/v1/bootcamps', bootcamps);
+app.use('/api/v1/courses', courses);
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
