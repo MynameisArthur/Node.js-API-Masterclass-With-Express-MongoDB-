@@ -2,6 +2,7 @@
   "name": "devcamper_api",
   "version": "1.0.0",
   "description": "Devcamper backend API",
+  "postmanDocumentation": "https://documenter.getpostman.com/view/6403307/Szzj7xeg",
   "main": "server.js",
   "scripts": {
     "start": "NODE_ENV=production node server",
